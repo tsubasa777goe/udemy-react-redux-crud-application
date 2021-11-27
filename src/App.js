@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
+  // const greeting = "Hiiiii, TOM!!!"
+  // const dom = <h1 className="foo">{greeting}</h1>
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> Hello World
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // <input type="text"  onClick={() => {console.log("I am a cat")}}/>
+    <input type="text"  onChange={() => {console.log("I am a cat")}}/>
+);
 }
+
 
 export default App;
