@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 function App() {
   // const greeting = "Hiiiii, TOM!!!"
   // const dom = <h1 className="foo">{greeting}</h1>
 
 const profiles = [
-  { name: "Taro", age: 10 },
+  { name: "Taro", age: 20 },
   { name: "Hanako", age: 5 },
-  { name: "Noname"}
+  { name: "NoName", age: 3}
 ]
 
   return (
@@ -29,9 +31,12 @@ const User = (props) => {
   return <div>Hi, I am {props.name}! , and {props.age}years old!</div>
 }
 
-
-User.defaultProps = {
-  age: 1
+User.propTypes = {
+  name: PropTypes.string,
+  // string:文字列　それ以外を入力するとエラーを出力
+  age: PropTypes.number.isRequired
+  // number:数字　それ以外を入力するとエラーを出力
+  // isRequired:入力必須　入力されていなければエラー
 }
 
 export default App;
