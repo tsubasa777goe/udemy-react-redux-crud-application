@@ -1,3 +1,6 @@
+// アクションクリエイター
+// actionを定義して、actionを返す関数
+
 export const INCREMENT = 'INCREMENT'
 export const DECREMENT = 'DECREMENT'
 
