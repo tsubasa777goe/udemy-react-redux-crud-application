@@ -10,7 +10,7 @@ export const increment = () => ({
 
 export const decrement = () => ({
 	type: DECREMENT
-)
+})
 
 // 元の記述
 // export const increment = () => {
